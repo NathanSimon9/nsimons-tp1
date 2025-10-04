@@ -1,0 +1,55 @@
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #0a0a3f, #b30000);
+      color: #f8f9fa;
+    }
+    header img {
+      max-height: 400px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .trophee-card {
+      background-color: #1b1b3a;
+      color: white;
+      border: 1px solid #444;
+    }
+    .trophee-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .list-group-item {
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+    .navbar-psg {
+    background-color: #004170; /* Bleu PSG */
+    }
+
+    .navbar-psg .nav-link,
+    .navbar-psg .navbar-brand {
+        color: #ffffff; /* Texte blanc */
+    }
+
+    .navbar-psg .nav-link:hover {
+        color: #ed1c24; /* Rouge PSG au survol */
+    }
+    .player-img img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .player-img img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+        .player h5 {
+        margin-top: 10px;
+        font-weight: 700;
+    }
+
+
+

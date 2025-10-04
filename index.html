@@ -1,13 +1,480 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <title>nsimontp1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSG - Les meilleures ?</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./src/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-psg sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <i class="bi bi-shield-fill-check"></i> PSG 2025
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#trophees">Trophées</a></li>
+          <li class="nav-item"><a class="nav-link" href="#joueurs">Joueurs</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img src="./assets/img/1397076.jpg" alt="PSG" class="img-fluid">
+  </header>
+
+  <!-- Section Trophées -->
+  <main class="container my-" id="trophees">
+    <h1 class="text-center mb-5">Trophées remportés en 2025</h1>
+    <div class="row g-4">
+
+      <!-- Coupe de France -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card trophee-card">
+          <img src="./assets/img/ae0a0843a31d401bd4330e7ebba987c9.jpg" class="card-img-top" alt="Coupe de France">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-trophy-fill text-warning"></i> Coupe de France
+            </h5>
+            <p class="card-text">Le PSG a remporté la Coupe de France 2025, confirmant son statut de géant du football français.</p>
+            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalCoupeFrance">Voir plus</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ligue des Champions -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card trophee-card">
+          <img src="./assets/img/fd663abf187b533b3bfa5811ce82d3c7.jpg" class="card-img-top" alt="Ligue des Champions">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-stars"></i> Ligue des Champions</h5>
+            <p class="card-text">Victoire historique en Ligue des Champions 2025, une finale maîtrisée et un triomphe européen majeur.</p>
+            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalLDC">Voir plus</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trophée des Champions -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card trophee-card">
+          <img src="./assets/img/0a233d7f66373e2c4fb4810a73ca3de6.jpg" class="card-img-top" alt="Trophée des Champions">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-award-fill text-danger"></i> Trophée des Champions</h5>
+            <p class="card-text">Le PSG a remporté le Trophée des Champions 2025, marquant le début de saison sur une note positive.</p>
+            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalTropheesChampions">Voir plus</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Supercoupe d’Europe -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card trophee-card">
+          <img src="./assets/img/724e691957a223cce09469e5b6c3e8fc.jpg" class="card-img-top" alt="Supercoupe d'Europe">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-globe-europe-africa text-info"></i> Supercoupe d’Europe</h5>
+            <p class="card-text">Le PSG a battu Tottenham 4-3 et remporté la Supercoupe d’Europe 2025 à Udine.</p>
+            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalSupercoupe">Voir plus</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ligue 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card trophee-card">
+          <img src="./assets/img/5caf83a446be4a7295ffe026c5b2e3a2.jpg" class="card-img-top" alt="Ligue 1">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-1-circle-fill text-primary"></i> Ligue 1</h5>
+            <p class="card-text">Le PSG a remporté le championnat de Ligue 1, confirmant une fois de plus sa domination nationale.</p>
+            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalLigue1">Voir plus</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Section Joueurs -->
+  <section class="container my-5" id="joueurs">
+    <h2 class="mb-4">Stats des joueurs PSG (Ligue des Champions 2025)</h2>
+
+    <!-- Liste simple -->
+    <ul class="list-group mb-4">
+      <li class="list-group-item">Désiré Doué</li>
+      <li class="list-group-item">Ousmane Dembélé</li>
+      <li class="list-group-item">Vitinha</li>
+      <li class="list-group-item">Gianluigi Donnarumma</li>
+      <li class="list-group-item">Marquinhos</li>
+    </ul>
+
+    <!-- Accordion avec détails -->
+    <div class="accordion" id="accordionJoueurs">
+
+      <!-- Désiré Doué -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingDoue">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDoue" aria-expanded="true" aria-controls="collapseDoue">
+            Désiré Doué – Milieu offensif
+          </button>
+        </h2>
+        <div id="collapseDoue" class="accordion-collapse collapse show" aria-labelledby="headingDoue" data-bs-parent="#accordionJoueurs">
+          <div class="accordion-body">
+            <ul>
+              <li>Buts : 4</li>
+              <li>Passes décisives : 5</li>
+              <li>Matchs joués : 10</li>
+              <li>Âge : 19 ans</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dembélé -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingDembele">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDembele" aria-expanded="false" aria-controls="collapseDembele">
+            Ousmane Dembélé – Ailier
+          </button>
+        </h2>
+        <div id="collapseDembele" class="accordion-collapse collapse" aria-labelledby="headingDembele" data-bs-parent="#accordionJoueurs">
+          <div class="accordion-body">
+            <ul>
+              <li>Buts : 3</li>
+              <li>Passes décisives : 6</li>
+              <li>Matchs joués : 11</li>
+              <li>Âge : 28 ans</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Donnarumma -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingDonnarumma">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDonnarumma" aria-expanded="false" aria-controls="collapseDonnarumma">
+            Gianluigi Donnarumma – Gardien
+          </button>
+        </h2>
+        <div id="collapseDonnarumma" class="accordion-collapse collapse" aria-labelledby="headingDonnarumma" data-bs-parent="#accordionJoueurs">
+          <div class="accordion-body">
+            <ul>
+              <li>Arrêts : 45</li>
+              <li>Cages inviolées : 5</li>
+              <li>Matchs joués : 12</li>
+              <li>Âge : 26 ans</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container my-5" id="carousel-joueurs">
+  <h2 class="text-center mb-4">Joueurs PSG – Finale Ligue des Champions 2025</h2>
+
+  <div id="joueursCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-around text-center">
+          
+          <!-- Joueur 1 -->
+          <div class="player">
+            <div class="player-img mb-2">
+            
+              <img src="./assets/img/thumb2-desire-doue-4k-blue-neon-lights-paris-saint-germain-ligue-1.jpg" alt="Désiré Doué" class="img-fluid" style="width:20vw; height:15vw; background-color:#ddd;">
+            </div>
+            <h5>Désiré Doué</h5>
+          </div>
+
+          <!-- Joueur 2 -->
+          <div class="player">
+            <div class="player-img mb-2">
+             
+              <img src="./assets/img/thumb2-4k-ousmane-dembele-white-uniform-blue-neon-lights-france-national-football-team.jpg" alt="Ousmane Dembélé" class="img-fluid" style="width:20vw; height:15vw; background-color:#ddd;">
+            </div>
+            <h5>Ousmane Dembélé</h5>
+          </div>
+
+          <!-- Joueur 3 -->
+          <div class="player">
+            <div class="player-img mb-2">
+             
+              <img src="./assets/img/l1-20240917112850-2986.jpg" alt="Vitinha" class="img-fluid " style="width:20vw; height:15vw; background-color:#ddd;">
+            </div>
+            <h5>Vitinha</h5>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="d-flex justify-content-around text-center">
+
+          <!-- Joueur 4 -->
+          <div class="player">
+            <div class="player-img mb-2">
+            
+              <img src="./assets/img/thumb2-gianluigi-donnarumma-4k-psg-blue-neon-lights-ligue-1.jpg" alt="Gianluigi Donnarumma" class="img-fluid" style="width:20vw; height:15vw; background-color:#ddd;">
+            </div>
+            <h5>Gianluigi Donnarumma</h5>
+          </div>
+
+          <!-- Joueur 5 -->
+          <div class="player">
+            <div class="player-img mb-2">
+              
+              <img src="./assets/img/HD-wallpaper-marquinhos-brazilian-footballers-defender-paris-saint-germain-ligue-1-joy-psg-fc-artwork-marcos-aoas-correa-neon-lights-soccer-creative.jpg" alt="Marquinhos" class="img-fluid" style="width:20vw; height:15vw; background-color:#ddd;">
+            </div>
+            <h5>Marquinhos</h5>
+          </div>
+
+          <!--joueur 6  -->
+          <div class="player">
+            <div class="player-img mb-2">
+              <img src="./assets/img/thumb2-khvicha-kvaratskhelia-4k-blue-neon-lights-paris-saint-germain-ligue-1.jpg" alt="" class="img-fluid" style="width:20vw; height:15vw; background-color:#f0f0f0;">
+            </div>
+            <h5>Khvicha Kvaratskhelia</h5>
+
+        </div>
+      </div>
+      
+
+    </div>
     
+
+    <!-- Contrôles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#joueursCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Précédent</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#joueursCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Suivant</span>
+    </button>
+  </div>
+</section>
+
+<section class="container my-5" id="carousel-joueurs_2">
+
+  <div id="joueursCarousel_2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+  
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-around text-center">
+          
+          <!-- Joueur 7 -->
+          <div class="player">
+            <div class="player-img mb-2">
+             
+              <img src="./assets/img/thumb2-achraf-hakimi-4k-blue-neon-lights-paris-saint-germain-ligue-1.jpg" alt="Désiré Doué" class="img-fluid" style="width:20vw; height:15vw; background-color:#ddd;">
+            </div>
+            <h5>Achraf Hakimi</h5>
+          </div>
+
+          <!-- Joueur 8 -->
+          <div class="player">
+            <div class="player-img mb-2">
+             
+              <img src="./assets/img/valroff_lv1_3647.webp" alt="Ousmane Dembélé" class="img-fluid" style="width:20vw; height:15vw; background-color:#ddd;">
+            </div>
+            <h5>Joao Neves</h5>
+          </div>
+
+          <!-- Joueur 9 -->
+          <div class="player">
+            <div class="player-img mb-2">
+   
+              <img src="./assets/img/thumb2-nuno-mendes-4k-blue-neon-lights-psg-ligue-1.jpg" alt="Vitinha" class="img-fluid " style="width:20vw; height:15vw; background-color:#ddd;">
+            </div>
+            <h5>Nuno Mendes</h5>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="d-flex justify-content-around text-center">
+
+          <!-- Joueur 10 -->
+          <div class="player">
+            <div class="player-img mb-2">
+             
+              <img src="./assets/img/thumb2-fabian-ruiz-4k-2022-blue-neon-lights-psg.jpg" alt="Gianluigi Donnarumma" class="img-fluid" style="width:20vw; height:15vw; background-color:#ddd;">
+            </div>
+            <h5>Fabian Ruiz</h5>
+          </div>
+
+          <!-- Joueur 11 -->
+          <div class="player">
+            <div class="player-img mb-2">
+             
+              <img src="./assets/img/Barcola.webp" alt="Marquinhos" class="img-fluid" style="width:20vw; height:15vw; background-color:#ddd;">
+            </div>
+            <h5>Bradley Barcola</h5>
+          </div>
+
+          <!--joueur 12  -->
+          <div class="player">
+            <div class="player-img mb-2">
+              <img src="./assets/img/1200-L-psg-la-performance-xxl-de-pacho-reims.jpg" alt="" class="img-fluid" style="width:20vw; height:15vw; background-color:#f0f0f0;">
+            </div>
+            <h5>Willian Pacho</h5>
+
+        </div>
+      </div>
+      
+
+    </div>
+    
+
+    <!-- Contrôles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#joueursCarousel_2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Précédent</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#joueursCarousel_2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Suivant</span>
+    </button>
+  </div>
+<section class="container my-5" id="critique">
+  <h2 class="text-center mb-4">Critique de la saison 2025</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card bg-primary text-white p-3 shadow-sm h-100">
+        <h5>⚽ Attaque</h5>
+        <p>Le PSG a été efficace offensivement, mais certaines occasions ont été manquées contre des équipes de haut niveau.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-danger text-white p-3 shadow-sm h-100">
+        <h5>🛡️ Défense</h5>
+        <p>La défense a tenu le coup la plupart du temps, mais quelques erreurs individuelles ont coûté cher dans les moments critiques.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-primary text-white p-3 shadow-sm h-100">
+        <h5>🎯 Tactique</h5>
+        <p>Le coach a su adapter ses stratégies, mais certains changements tardifs ont limité le potentiel de l’équipe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Coupe de France -->
+  <div class="modal fade" id="modalCoupeFrance" tabindex="-1" aria-labelledby="modalCoupeFranceLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCoupeFranceLabel">Coupe de France 2025</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Le PSG a remporté la Coupe de France 2025 après un parcours impressionnant. La finale, disputée au Stade de France à Saint-Denis, a été marquée par des performances exceptionnelles de l’équipe.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ligue des Champions -->
+  <div class="modal fade" id="modalLDC" tabindex="-1" aria-labelledby="modalLDCLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLDCLabel">Ligue des Champions 2025</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Le PSG a remporté la Ligue des Champions 2025, s'imposant face aux meilleures équipes d'Europe. Une victoire historique pour le club et ses supporters.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trophée des Champions -->
+  <div class="modal fade" id="modalTropheesChampions" tabindex="-1" aria-labelledby="modalTropheesChampionsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTropheesChampionsLabel">Trophée des Champions 2025</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Le PSG a remporté le Trophée des Champions 2025, marquant le début de saison sur une note positive et affirmant sa domination nationale.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Supercoupe d’Europe -->
+  <div class="modal fade" id="modalSupercoupe" tabindex="-1" aria-labelledby="modalSupercoupeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSupercoupeLabel">Supercoupe d’Europe 2025</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Le PSG a battu Tottenham 4-3 et remporté la Supercoupe d’Europe 2025 à Udine. Un match spectaculaire et un triomphe européen.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ligue 1 -->
+  <div class="modal fade" id="modalLigue1" tabindex="-1" aria-labelledby="modalLigue1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLigue1Label">Ligue 1 2025</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Le PSG a remporté le championnat de Ligue 1 2025, confirmant sa domination sur le football français et terminant la saison à la première place.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
